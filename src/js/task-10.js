@@ -9,7 +9,8 @@ createBtnRef.addEventListener('click', (e) => {
     createBoxes(amount);
   })
 })
- 
+
+
 
 destroyBtnRef.addEventListener('click', reset); 
 
