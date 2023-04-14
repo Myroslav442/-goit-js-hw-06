@@ -19,5 +19,4 @@ const liListEl = ingredients.map((name) => {
 });
 
 ulEL.append(...liListEl);
-document.body.append(ulEL);
 
