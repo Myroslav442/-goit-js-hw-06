@@ -10,22 +10,20 @@ function handleSubmit(event)  {
     const {
         elements: { email, password }
     } = event.currentTarget;
+  
+ 
 
     if (email.value === "" || password.value === "") {
       alert("Please fill in all the fields!");
     }
-     const formData = new FormData(event.currentTarget);
-
-  
+  const formData = new FormData(event.currentTarget);
+  const form = {};
 
     formData.forEach((value, name) => {
-        const form = {
-            name,
-            value
-        };
-       console.log(form);
+      form[name] = value;
+         
     })
-
+  console.log(form); 
 }
 
 formRef.addEventListener("submit", resetInput);
